@@ -12,6 +12,24 @@ import { FiArrowUpRight } from "react-icons/fi";
 
 
 const projects = [
+{
+    title: "RentNest - Property Rental & Management Platform",
+    image: "https://i.postimg.cc/FFYrYhLz/Screenshot-2026-08-11-122830.png",
+    description: "A modern, full-stack property rental and management web application built with Next.js, Tailwind CSS, and a secure backend REST API RentNest connects Tenants, Landlords, and Administrators in a seamless ecosystem for property listings, rental requests, payments, and user management.",
+    technology: ["Nextjs", "Node.js", "TypeScript", "Tailwind", "Prisma ORM" ,"Stripe payment"],
+    liveLink: "https://l2-a5-nextjs.vercel.app/",
+    github: "https://github.com/saifur2468/L2-A5-Nextjs",
+    features: [
+   
+"Browse Categories: Explore various property types and categories.",
+"Search Properties: Filter and search available properties by location, such as Dhanmondi and Gulshan.",
+"Authentication: Secure user registration and login with JWT support."
+    ],
+    challenges: "Managing secure user role transitions (User to Tenant/Admin) smoothly and validating multi-step forms on the checkout module.",
+    improvements: "Will implement Stripe payment gateway and add an interactive 3D virtual tour of available apartments."
+  },
+
+
   {
     title: "Gaming Rating Website",
     image: "https://i.postimg.cc/x811MNfL/Screenshot-2026-03-02-225059.png",
@@ -29,21 +47,22 @@ const projects = [
     improvements: "Plan to integrate Twitch API for live game streaming data, and build an advanced AI-based game recommendation system."
   },
   {
-    title: "Apartment Booking Website",
-    image: "https://i.postimg.cc/L8D2TLFG/Screenshot-2026-03-14-163117.png",
-    description: "A comprehensive real estate and apartment booking platform with dynamic dashboard controls and structured rental workflows.",
-    technology: ["React", "Node.js", "MongoDB", "Tailwind", "Firebase"],
-    liveLink: "https://building-e4f32.web.app/",
-    github: "https://github.com/saifur2468/Assignment-12",
+    title: "Bistro Restaurant Web Application",
+    image: "https://i.postimg.cc/15xcBWm1/Screenshot-2026-03-23-151950.png",
+    description: "A streamlined luxury restaurant management layout supporting cart actions, food categorization, and admin product tracking.",
+    technology: ["React", "Firebase", "Node.js", "MongoDB", "Tailwind"],
+    liveLink: "https://bistro-boss-17795.web.app/",
+    github: "https://github.com/saifur2468/Bistro-restaurant-client",
     features: [
-      "Unified User Login & Registration management",
-      "Interactive Apartment Booking system with active tracking",
-      "Integrated secure mock Payment Processing simulation",
-      "Role-based Admin Dashboard for total control panel management"
+      "Fluid Food Ordering UI with categorizations",
+      "Instant Cart calculations and smooth secure Payment setup",
+      "Interactive Table Booking reservation subsystem",
+      "Robust Admin Control Panel for menu and orders tracking"
     ],
-    challenges: "Managing secure user role transitions (User to Tenant/Admin) smoothly and validating multi-step forms on the checkout module.",
-    improvements: "Will implement Stripe/SSLCommerz payment gateway and add an interactive 3D virtual tour of available apartments."
+    challenges: "Designing an efficient local cart state synced perfectly with server database values across page reloads.",
+    improvements: "Intend to introduce a live order tracking dashboard with WebSocket connection and integrated loyalty point discounts."
   },
+  
   {
     title: "Volunteer Management",
     image: "https://i.postimg.cc/jdGJ0vqn/Screenshot-2026-03-02-230510.png",
@@ -60,22 +79,7 @@ const projects = [
     challenges: "Handling concurrent database updates safely when volunteers click 'Join' simultaneously on a slot-limited post.",
     improvements: "Plan to build an automated email notification system for upcoming events and download-ready PDF certificates for volunteers."
   },
-  {
-    title: "Bistro Restaurant Web Application",
-    image: "https://i.postimg.cc/15xcBWm1/Screenshot-2026-03-23-151950.png",
-    description: "A streamlined luxury restaurant management layout supporting cart actions, food categorization, and admin product tracking.",
-    technology: ["React", "Firebase", "Node.js", "MongoDB", "Tailwind"],
-    liveLink: "https://bistro-boss-17795.web.app/",
-    github: "https://github.com/saifur2468/Bistro-restaurant-client",
-    features: [
-      "Fluid Food Ordering UI with categorizations",
-      "Instant Cart calculations and smooth secure Payment setup",
-      "Interactive Table Booking reservation subsystem",
-      "Robust Admin Control Panel for menu and orders tracking"
-    ],
-    challenges: "Designing an efficient local cart state synced perfectly with server database values across page reloads.",
-    improvements: "Intend to introduce a live order tracking dashboard with WebSocket connection and integrated loyalty point discounts."
-  }
+  
 ];
 
 const ProjectSection = () => {
@@ -282,7 +286,7 @@ const ProjectSection = () => {
       {/* Global Bottom View More Button */}
       <div className="w-full flex justify-center pb-12">
         <button
-          className="group flex items-center gap-3 rounded-xl mt-4
+          className="group flex items-center gap-3 rounded-xl mt-10
           bg-slate-900 px-8 py-4 text-white font-semibold
           shadow-lg transition-all duration-300
           hover:bg-sky-600 hover:shadow-sky-500/30 hover:-translate-y-1"
