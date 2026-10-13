@@ -6,7 +6,7 @@ import emailjs from '@emailjs/browser';
 
 export function Contact() {
   const ref = useRef(null);
-  const formRef = useRef(null); // EmailJS এর জন্য ফর্ম রেফারেন্স
+  const formRef = useRef(null); 
   const isInView = useInView(ref, { once: true, margin: '-100px' });
   
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });

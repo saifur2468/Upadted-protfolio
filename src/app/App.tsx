@@ -15,10 +15,8 @@ export default function App() {
       <Navbar />
       <Hero />
       <About></About>
-      {/* <About /> */}
-      <Skills />
-      {/* <Projects /> */}
       <ProjectSection></ProjectSection>
+      <Skills />
 
       <EducationSection></EducationSection>
       <Contact />

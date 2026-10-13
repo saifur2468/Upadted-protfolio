@@ -16,7 +16,8 @@ import {
   SiMongodb,
   SiDocker,
   SiFigma,
-  SiGit
+  SiGit,
+  SiJsonwebtokens
 } from 'react-icons/si';
 
 export function Skills() {
@@ -36,6 +37,7 @@ export function Skills() {
     { name: 'Node.js', icon: SiNodedotjs, category: 'backend' },
     { name: 'Express', icon: SiExpress, category: 'backend' },
     { name: 'Firebase', icon: SiFirebase, category: 'backend' },
+    { name: 'JWT', icon:  SiJsonwebtokens, category: 'backend' },
     
     { name: 'PostgreSQL', icon: SiPostgresql, category: 'database' },
     { name: 'MongoDB', icon: SiMongodb, category: 'database' },

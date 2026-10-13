@@ -1,7 +1,7 @@
 import { motion } from "motion/react";
 import { Github, Linkedin, Mail } from "lucide-react";
 import { Typewriter } from "react-simple-typewriter";
-import { FaDownload } from "react-icons/fa";
+import { FaDownload, FaFacebook } from "react-icons/fa";
 import profileImg from "../../../assets/saifpi.jpg";
 
 export function Hero() {
@@ -50,7 +50,7 @@ export function Hero() {
                 <Typewriter
                   words={[
                     "Building Scalable Web Apps",
-                    
+
                     "React & Node.js Expert",
                     "TypeScript & Prisma",
                     "Nextjs, postgresql"
@@ -71,9 +71,7 @@ export function Hero() {
               transition={{ duration: 0.8, delay: 0.6 }}
               className="mt-6 text-xl text-zinc-400 max-w-2xl"
             >
-              I develop modern full stack web applications using React,
-              Node.js, MongoDB, and scalable backend technologies to create
-              seamless digital experiences.
+              I build modern, scalable full-stack web applications using React, Next.js, TypeScript, Tailwind CSS, Node.js, Express.js, PostgreSQL, MongoDB, and Prisma ORM.
             </motion.p>
 
             <motion.div
@@ -82,16 +80,20 @@ export function Hero() {
               transition={{ duration: 0.8, delay: 0.8 }}
               className="mt-10 flex flex-wrap items-center gap-4"
             >
-              {/* Resume Button */}
-              <motion.button
+
+
+              {/* Resume Download Button */}
+              <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                onClick={scrollToProjects}
+                href="/src/assets/full-Stack resume.pdf"
+                download="Saifur-Rahman-Full-Stack-Resume.pdf"
                 className="flex items-center gap-2 px-8 py-4 bg-emerald-500 text-zinc-950 rounded-lg hover:bg-emerald-400 transition-colors"
               >
                 <span className="font-semibold">Resume</span>
                 <FaDownload className="size-4" />
-              </motion.button>
+              </motion.a>
+
 
               {/* Social Icons */}
               <div className="flex items-center gap-4">
@@ -113,6 +115,16 @@ export function Hero() {
                   className="p-3 border border-zinc-700 rounded-lg text-zinc-400 hover:text-white hover:border-zinc-500 transition-colors"
                 >
                   <Linkedin className="size-5" />
+                </motion.a>
+
+                <motion.a
+                  whileHover={{ y: -3 }}
+                  href="https://www.facebook.com/7H.SAIFURSAIF"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-3 border border-zinc-700 rounded-lg text-zinc-400 hover:text-white hover:border-zinc-500 transition-colors"
+                >
+                  <FaFacebook className="size-5" />
                 </motion.a>
 
                 <motion.a
@@ -149,7 +161,7 @@ export function Hero() {
               <img
                 src={profileImg}
                 alt="Saifur"
-                className="relative w-40 h-42 md:w-96 md:h-96 lg:w-[430px] lg:h-[430px] object-cover rounded-full border-4  shadow-[0_0_40px_rgba(16,185,129,0.35)]"
+                className="relative w-40 h-42 md:w-96 md:h-96 lg:w-[430px] lg:h-[430px] object-cover   rounded-2xl"
               />
             </motion.div>
           </motion.div>
