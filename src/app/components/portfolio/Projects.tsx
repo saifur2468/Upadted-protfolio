@@ -61,7 +61,24 @@ const projects = [
     ],
     challenges: "Designing an efficient local cart state synced perfectly with server database values across page reloads.",
     improvements: "Intend to introduce a live order tracking dashboard with WebSocket connections."
-  }
+  },
+
+  {
+    title: "volunter-managment",
+    image: "https://i.postimg.cc/cJKfWx6K/Screenshot-2026-10-19-183358.png",
+    description: "A user-friendly platform designed to connect volunteers with meaningful opportunities. Users can explore volunteer programs, register for events, manage their participation, and contribute to social causes. The platform simplifies volunteer coordination and helps organizations manage volunteer activities efficiently.",
+    technology: ["React", "Firebase", "Node.js", "MongoDB", "Tailwind"],
+    liveLink: "https://volunter-managment-ae225.web.app/",
+    github: "https://github.com/saifur2468/Assignment-11-client-Side ",
+features: [
+  "Volunteer Opportunity Discovery with category-based filtering",
+  "Seamless Volunteer Registration and Event Participation Management",
+  "Dedicated Dashboards for Managing Volunteer Activities and Opportunities"
+],
+challenges: "Implementing role-based access control and keeping volunteer registrations synchronized with event data while maintaining a smooth user experience.",
+improvements: "Plan to introduce real-time notifications, volunteer activity tracking, and an analytics dashboard to improve volunteer coordination."
+}
+
 ];
 
 const ProjectSection = () => {
