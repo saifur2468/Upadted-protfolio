@@ -28,7 +28,7 @@ const projects = [
   },
   {
     title: "RentNest - Apartment Booking",
-    image: "https://i.postimg.cc/FFYrYhLz/Screenshot-2026-08-11-122830.png",
+    image: "https://i.postimg.cc/rmwP7Wdy/Screenshot-2026-10-23-185412.png",
     description: "A modern, full-stack property rental and apartment management platform connecting Tenants, Landlords, and Administrators for property listings and requests.",
     technology: ["Next.js", "Node.js", "TypeScript", "Tailwind", "Prisma ORM", "Stripe"],
     liveLink: "https://l2-a5-nextjs.vercel.app/",
@@ -49,7 +49,7 @@ const projects = [
   },
   {
     title: "Bistro Boss Restaurant App",
-    image: "https://i.postimg.cc/15xcBWm1/Screenshot-2026-03-23-151950.png",
+    image: "https://i.postimg.cc/BbtRPDsz/Screenshot-2026-10-23-185255.png",
     description: "A streamlined luxury restaurant management layout supporting cart actions, food categorization, online table reservations, and admin product tracking.",
     technology: ["React", "Firebase", "Node.js", "MongoDB", "Tailwind"],
     liveLink: "https://bistro-boss-17795.web.app/",
@@ -65,7 +65,7 @@ const projects = [
 
   {
     title: "volunter-managment",
-    image: "https://i.postimg.cc/cJKfWx6K/Screenshot-2026-10-19-183358.png",
+    image: "https://i.postimg.cc/DZNXnkzL/Screenshot-2026-10-23-184406.png",
     description: "A user-friendly platform designed to connect volunteers with meaningful opportunities. Users can explore volunteer programs, register for events, manage their participation, and contribute to social causes. The platform simplifies volunteer coordination and helps organizations manage volunteer activities efficiently.",
     technology: ["React", "Firebase", "Node.js", "MongoDB", "Tailwind"],
     liveLink: "https://volunter-managment-ae225.web.app/",
